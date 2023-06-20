@@ -74,3 +74,97 @@ The cloud offers a wide range of possibilities, including:
 - Hosting applications: Applications can be deployed and hosted in the cloud, providing scalability, availability, and accessibility from anywhere.
 - Computing: Cloud computing enables organizations to leverage computing power on-demand, allowing for efficient resource utilization and cost optimization.
 - Virtual machines: Virtual machines can be provisioned in the cloud, providing flexibility and scalability for running applications and services.
+
+## CapEx vs OpEx
+
+Capital expenditure - Upfront payout.
+Operative expenditure - Spread over the year.
+The cloud is usually OpEx and on prem is usually both as you have to buy the inital stuff and then have to upkeep them.
+
+## Tags
+
+Subscription gives you a separate bill. You can tag a key pair such as team: Sales and these can be tagged to the resources so you know who has used what resource.
+
+## Categories of Azure services 
+
+- Storage
+- Network
+- Compute
+- DevOps
+- AI
+- Big data
+- IoT
+- Web
+- Database
+- Mobile
+
+## 4 ways to access Azure
+
+ARM - Azure resource manager an API. All the methods go through this and it makes sure you are authenticated. Updates CLI and powershell first.
+
+1. Portal - user interface
+2. CLI - 
+3. Powershell - 
+4. Other services and tools
+
+portal.azure.com -> how to access the azure portal
+
+## What is a virtual network or subnetwork
+
+A way of housing the virtual sytems to a network so they can work together. Consider the virtual network as your house so its like security. The subnets are breaking it up into rooms. They dont overlap. 
+
+### Creating an Azure Virtual Network:
+
+1. Log in to portal.azure.com
+2. Create a virtual network (VNet)
+3. Under Basics name it <group>-<first name>-<what is it for?>-vnet
+4. Under Basics change the region to UK South
+5. Under Tags create a tag with owner and your name
+6. Otherwise use default settings
+7. Review + Create 
+
+## Virtualisation
+
+### What is virtualisation?
+
+It is the process of creating a virtual or simulated verion of a computer system or resources. It allows multiple resources in to a single environment.
+
+### What is a virtual machine?
+
+A virtual machine (VM) is a emulation of a physical computer system. It is created within a virtual environment so multiple machines can coexist on a single computer.
+
+### Where can they be run?
+
+- Desktop using virtualisation software.
+- Servers - sevrver visualisation platforms
+- Cloud infrastructure - Azure, AWS, GCP
+
+### What determines how many can run?
+
+- Physical hardware resources - CPU cores, memory, network bandwidth
+- Virtualisation technology - They have varying capabilities, scalability and resource management.
+
+### What does a virtual machine include?
+
+1. Virtual hardware - there is virtual CPU, memory, disks, network interfaces.
+2. Operating system - OS can be Windows, Linux and macOS.
+3. Applications - Users can install and run software applications.
+4. Virtualisation software - Virtual machine monitor (VMM) manages the virtual machine
+5. Virtual machine configuration - Each virtual machine has its on configuration settings
+6. Virtual machine files - Stores configuration, operating system image, disk data.
+
+### What software is required to orchestrate / run the virtual machine?
+
+
+### What is the importance of an image when creating a VM?
+
+Image is base operating system 
+
+
+## Random notes on virtual machines
+when you create a virtual machine you have to make the virtual SSH key first. Within the .ssh file 
+Remember to turn it off when finished!
+
+
+
+

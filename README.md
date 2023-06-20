@@ -8,6 +8,8 @@ An API (Application Programming Interface) is a set of rules and protocols that 
 ## What is Azure and the cloud?
 Azure is a cloud computing platform provided by Microsoft. The cloud refers to a network of servers that are delivered as a service over the internet, allowing users to access and utilize various computing resources and services on-demand. Azure provides a wide range of services, including virtual machines, databases, storage, and more, enabling users to build, deploy, and manage applications and services in the cloud.
 
+![What is the cloud?](imgs/whatIsTheCloud.png)
+
 ## Multiple data centres within multiple regions
 Azure operates multiple data centers across various regions globally. This distributed infrastructure ensures redundancy and high availability. In the event of a natural disaster or other disruptions, the impact is minimized as only a subset of data centers might be affected. Azure's data centers are designed with robust infrastructure, including their own cooling, water supply, power, generators, and other resources necessary for uninterrupted service delivery. This resilience helps maintain service continuity and data integrity.
 
@@ -20,6 +22,9 @@ Disaster recovery: Cloud providers like Azure offer built-in backup and recovery
 Automatic updates: Cloud providers regularly update their services with new features and security patches, relieving users from the burden of manual updates.
 - Cost savings: By leveraging the cloud, organizations can reduce the need for on-premises infrastructure, maintenance, and staffing costs.
 ## Types of cloud services
+
+![Cloud Service Types](imgs/cloudServicesTypes.png)
+
 Cloud services can be categorized into the following types:
 
 - Software as a Service (SaaS): Users access and utilize software applications over the internet without the need for installation or management. Examples include Spotify and Dropbox.
@@ -33,6 +38,10 @@ Advantages of using the cloud include:
 - Disaster recovery: Cloud services often have built-in backup and recovery mechanisms.
 - Accessibility: Cloud services can be accessed from anywhere with an internet connection.
 - Automatic updates: Cloud providers handle regular updates and patches.
+
+Plus if something goes wrong you can get some money back:
+![Money back image](imgs/moneyBack.png)
+
 ## Disadvantages of using the cloud include:
 
 - Limited control: Users have less control over the underlying infrastructure and operations.
@@ -49,6 +58,9 @@ Using a hybrid cloud or multi-cloud approach can have the following disadvantage
 - Premises and cloud expenditure: Managing on-premises infrastructure alongside cloud services may involve additional costs.
 - Limited control: The complexity of a hybrid or multi-cloud environment can reduce control and visibility.
 ## Cost comparison: On-premises vs. cloud for organizations
+
+![Cost Comparison](imgs/costComparison.png)
+
 For organizations, the cloud often provides cost advantages compared to maintaining on-premises infrastructure. Some reasons include:
 
 - Cloud pricing flexibility: Cloud services offer various pricing models, including pay-as-you-go, allowing organizations to optimize costs and scale resources based on usage.
@@ -61,7 +73,7 @@ Amazon Web Services (AWS) is often considered the largest cloud provider globall
 ## Azure organization structure
 Azure provides an organizational structure to manage resources effectively:
 
-!["Azure structure"](https://github.com/ElenaCKay/tech241_azure/blob/main/howIsAzureOrganised.png)
+![How is Azure Organised?](imgs/howIsAzureOrganised.png)
 
 - Management groups: These help organize and manage access, policies, compliance, and permissions within an organization. They allow control over resource usage, such as specifying the size of virtual machines or managing costs for specific departments or teams.
 - Subscriptions: Subscriptions act as payment accounts and help separate billing within Azure. Different types of subscriptions are available, including student subscriptions, pay-as-you-go, and free subscriptions.
@@ -87,6 +99,7 @@ Subscription gives you a separate bill. You can tag a key pair such as team: Sal
 
 ## Categories of Azure services 
 
+(![Azure Categories](imgs/AzureCategories.png))
 - Storage
 - Network
 - Compute
@@ -155,6 +168,7 @@ A virtual machine (VM) is a emulation of a physical computer system. It is creat
 
 ### What software is required to orchestrate / run the virtual machine?
 
+Azure, Git Bash, VS Code.
 
 ### What is the importance of an image when creating a VM?
 

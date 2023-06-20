@@ -61,6 +61,8 @@ Amazon Web Services (AWS) is often considered the largest cloud provider globall
 ## Azure organization structure
 Azure provides an organizational structure to manage resources effectively:
 
+!["Azure structure"](https://github.com/ElenaCKay/tech241_azure/blob/main/howIsAzureOrganised.png)
+
 - Management groups: These help organize and manage access, policies, compliance, and permissions within an organization. They allow control over resource usage, such as specifying the size of virtual machines or managing costs for specific departments or teams.
 - Subscriptions: Subscriptions act as payment accounts and help separate billing within Azure. Different types of subscriptions are available, including student subscriptions, pay-as-you-go, and free subscriptions.
 - Resource groups: Resource groups act as containers for resources and are required in Azure. Resources must be placed within resource groups to provide logical grouping and manage access control and policies.

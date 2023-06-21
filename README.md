@@ -31,7 +31,7 @@ Cloud services can be categorized into the following types:
 - Infrastructure as a Service (IaaS): Users have more control and flexibility to run virtual machines and manage their computing resources in the cloud.
 - Platform as a Service (PaaS): Developers can deploy and manage applications without worrying about the underlying infrastructure.
 ## Advantages and disadvantages of using the cloud
-Advantages of using the cloud include:
+### Advantages of using the cloud include:
 
 - Enhanced security: Cloud providers implement robust security measures to protect data and infrastructure.
 - Scalability: Resources can be easily scaled up or down based on demand.
@@ -42,7 +42,7 @@ Advantages of using the cloud include:
 Plus if something goes wrong you can get some money back:
 ![Money back image](imgs/moneyBack.png)
 
-## Disadvantages of using the cloud include:
+### Disadvantages of using the cloud include:
 
 - Limited control: Users have less control over the underlying infrastructure and operations.
 - Internet dependency: Cloud services require a reliable internet connection for access and usage.
@@ -174,11 +174,62 @@ Azure, Git Bash, VS Code.
 
 Image is base operating system 
 
+## Azure virtual machine and network diagram
 
-## Random notes on virtual machines
-when you create a virtual machine you have to make the virtual SSH key first. Within the .ssh file 
-Remember to turn it off when finished!
+![Azure with virtual machine and network Image](imgs/AzureVirtualMachineImg.png)
+
+1. Region - Where everything lives
+2. Resource group - Like a container to organise everything you have
+3. Virtual network - Like a house
+4. Subnet - Like a room iside the house
+5. Virtual Machine - Like a computer within the room
+6. Disk - Storage
+7. Network Interface Controller (NIC) - Communicate with the computer through this
+8. Public IP - Your public address
+9. Network Security Group - Security system on the computer
+10. NSG Rule - Decides what traffic can access the computer
+11. SSH Key - Like a padlock on the computer
 
 
 
+## Steps for setting up an Azure VM
+
+1. Install Git Bash
+2. Go to your Home directory using cd
+3. Make .ssh folder using mkdir .ssh 
+4. Alternately open .ssh folder using cd .ssh
+5. Create a keypair on your local computer in the .ssh folder 
+using this command:
+ssh-keygen -t rsa -b 4096 -C <"personal email">
+6. Give the name to the in which to save the key
+ e.g. tech241-neha-az-key (git bash)
+7. To access the key, use:
+cat tech241-neha-az-key.pub (git bash)
+8. Go to azure by using portal.azure.com
+9. Go to SSH Keys
+10. Fill in the name of the key you created using GitBash
+in your local computer.
+11. Use <upload existing public key>
+12. Paste the key in the box provided.
+13. Click review n create to validate your key.
+14. Create a virtual azure machine using these specifications.
+ Security type standard,
+ Image Ubuntu Server 18.04 LTS. 
+ Size standard_B1s. 
+ Username adminuser. 
+ Stored keys tech241-neha-az-key. 
+ Inbound ports SSH and HTTP.
+ Disk type Standard SSD
+15. Click connect on virtual machine page (azure) and put your keyname in:
+chmod 400 <keyname>
+16. Copy this command and paste this into Git Bash
+17. Use ls -l to see if it has worked. You'll see read permissions.
+-r--r--r-- 1 Venkat 197121 3389 Jun 20 15:47 <tech421-neha-az-key>
+18. Go back to azure VM and type in 
+~/.ssh/tech421-neha-az-key in the private key path.
+19.  Copy the path from Run the example command below to to connect to your VM.
+ ssh -i ~/.ssh/tech421-neha-az-key adminuser@20.58.17.237
+20. Enter yes to authenticity fingerprint and you have connected with your remote machine.
+21. ls -a to check hidden files
+22. Stop vm on azure portal if you are not using it. 
 
